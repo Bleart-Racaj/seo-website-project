@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 
 export default function About() {
@@ -14,10 +15,11 @@ export default function About() {
         {/* Header */}
         <header className={styles.header}>
           <div className={styles.logo}>PixelPulse</div>
-          <nav className={styles.nav}>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="#contact">Contact</a>
+          <nav className={styles.nav} style={{ display: 'flex', gap: '2rem' }}>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </header>
 

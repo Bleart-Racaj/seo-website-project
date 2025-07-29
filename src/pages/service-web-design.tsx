@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 
 export default function ServiceWebDesign() {
@@ -55,14 +56,15 @@ export default function ServiceWebDesign() {
           }}
         />
       </Head>
-      <div className={styles.agencyPage}>
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#fff', color: '#171717' }}>
         {/* Header */}
-        <header className={styles.header}>
+        <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '2rem 4vw 1.5rem 4vw', fontWeight: 600, fontSize: '1.1rem' }}>
           <div className={styles.logo}>PixelPulse</div>
-          <nav className={styles.nav}>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="#contact">Contact</a>
+          <nav className={styles.nav} style={{ display: 'flex', gap: '2rem' }}>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </header>
 

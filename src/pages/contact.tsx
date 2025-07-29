@@ -74,6 +74,7 @@ export default function Contact() {
           <nav style={{ display: 'flex', gap: '2rem' }}>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </header>
