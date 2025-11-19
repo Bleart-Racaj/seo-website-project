@@ -1,0 +1,18 @@
+{
+  "name": "fullstack-starter",
+  "version": "1.0.0",
+  "description": "Full-stack starter project with Express, Next.js, and Prisma",
+  "scripts": {
+    "prisma:dev": "prisma migrate dev --name init",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "prisma": "^6.19.0"
+  }
+}
+
